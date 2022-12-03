@@ -1,7 +1,7 @@
 const fibonacci = function (num) {
-  if (num === 0 || num === 1) {
+  if (num === 1) {
     return Number(num);
-  } else if (num < 0) {
+  } else if (num <= 0) {
     return "OOPS";
   }
 
@@ -11,7 +11,7 @@ const fibonacci = function (num) {
     result[i] = result[i - 2] + result[i - 1];
   }
 
-  return result[result.length - 1];
+  return Number(result[result.length - 1]);
 };
 
 // Do not edit below this line
